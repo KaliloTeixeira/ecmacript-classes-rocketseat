@@ -1,0 +1,38 @@
+// const nome = 'Diego';
+// const idade = 23;
+
+// console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
+
+// Object short syntax
+const name = 'Diego';
+const age = 23;
+
+// sem short syntax
+// const user = {
+//     name: name,
+//     age: age,
+//     company: 'Rocketseat'
+// }
+
+// Com short syntax
+const user = {
+    name,
+    age,
+    company: 'Rocketseat'
+}
+
+console.log(user);
+
+// Exercicios 06 e 07
+const nome = 'Diego';
+const idade = 23;
+
+console.log(`O usuário ${nome} tem ${idade} anos de idade.`);
+
+const usuario = {
+    nome,
+    idade,
+    cidade: 'Rio do Sul'
+}
+
+console.log(usuario);

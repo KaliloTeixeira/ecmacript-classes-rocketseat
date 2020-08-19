@@ -1,0 +1,32 @@
+/** Desestruturação de Objetos */
+
+const user = {
+    name: 'Kalilo',
+    age: 18,
+    adress: {
+        city: 'vitoria da conquista',
+        state: 'ba'
+    },
+};
+
+// Sem desetruturar
+// const name = user.name;
+// const age = user.age;
+// const city = user.adress.city;
+
+// Desestruturando
+const { name, age, adress: { city } } = user;
+
+console.log(name);
+console.log(city);
+
+function mostraNome(user) {
+    console.log(user.name);
+}
+
+// Desetruturando direto na função
+function mostraNome02({ name }) {
+    console.log(name);
+}
+
+mostraNome02(user);

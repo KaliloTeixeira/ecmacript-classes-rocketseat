@@ -1,0 +1,58 @@
+//  ******* CLASSES *******
+
+// class List {
+//     // O constructor é a primeira função executada quando uma classe é instanciada
+//     constructor() {
+//         this.data = [];
+//     }
+
+//     add(data) {
+//         this.data.push(data);
+//         console.log((this.data));
+//     }
+// }
+
+// class TodoList extends List {
+
+//     constructor() {
+//         super(); // Importa todos os métodos da classe pai
+//         //     this.todos = [];
+
+//         this.user = 'Kalilo';
+//     }
+
+//     showUser() {
+//         console.log(this.user);
+//     }
+
+
+//     // addTodo() {
+//     //     this.todos.push('Novo Todo');
+//     //     console.log((this.todos));
+//     // }
+// }
+
+
+// const myList = new TodoList();
+// document.querySelector('#newtodo').onclick = () => { myList.add('Novo Todo') };
+
+// myList.showUser();
+
+//  ******* MÉTODOS ESTÁTICOS *******
+//  Os métodos estáticos nao conseguem acessar dados do restante da classe
+//  Por isso, são usados para realizar tarefas em que recebem valores e retornam
+//  um resultado que não dependem de outros dados da classe,
+//  logo, geralmente essas classes não necessitam de um constructor
+
+
+// class Math {
+//     // constructor() {
+//     //     this.todos = [];
+//     // }
+
+//     static sum(a, b) {
+//         console.log(a + b);
+//     }
+// }
+
+// Math.sum(3, 5);

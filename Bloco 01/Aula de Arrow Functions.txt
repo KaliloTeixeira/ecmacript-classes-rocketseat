@@ -1,0 +1,32 @@
+/** ARROW FUNCTIONS */
+
+// - Callback - passagem de uma função como parametro para outra função
+
+const array = [1, 3, 4, 5, 6];
+
+
+/* Maneira 01 */
+var newArray = array.map((item) => {
+    return item * 2;
+});
+
+console.log(newArray);
+
+
+/**Maneira 02 - quando recebe apenas 1 parametro não necessita os parenteses*/
+newArray = array.map(item => {
+    return item * 2;
+});
+
+console.log(newArray);
+
+/** Maneira 03 - Quando o retorno for de apenas 1 comando, pode ser adicionado diretamente após a chave abertura*/
+newArray = array.map(item => item * 2);
+
+console.log(newArray);
+
+
+/** Retornando Objeto com arrow function */
+const teste = () => ({ name: 'Kalilo' })
+
+console.log(teste());

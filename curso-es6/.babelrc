@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ], //preset-env vai entender qual o ambiente que estamos trabalhando (desktop, navegador, mobile) e vai converter as features do ES para o formato q o navegador entende.
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-async-to-generator"
+    ]
+}

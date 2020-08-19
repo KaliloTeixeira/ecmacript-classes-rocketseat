@@ -1,0 +1,39 @@
+// Ex02 - Arrays
+const users = [
+    { name: 'Diego', age: 23, company: 'Rocketseat' },
+    { name: 'Gabriel', age: 15, company: 'Rocketseat' },
+    { name: 'Lucas', age: 30, company: 'Facebook' },
+];
+
+// 2.1 - .map()
+var usersAge = [];
+
+usersAge = users.map((user) => {
+    return user.age;
+});
+
+console.log(usersAge)
+
+//2.2 - .filter()
+var rocketseatEmployers = [];
+
+rocketseatEmployers = users.filter((user) => user.company == 'Rocketseat');
+
+console.log(rocketseatEmployers);
+
+//2.3 - .find()
+var havGoogleEmployers;
+
+havGoogleEmployers = users.find(user => user.company === 'Google');
+
+console.log(havGoogleEmployers);
+
+//2.4 
+var doubleAgeUsers;
+
+doubleAgeUsers = users.map(user => {
+    user.age *= 2;
+    return user
+}).filter(user => user.age <= 50)
+
+console.log(doubleAgeUsers);

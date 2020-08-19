@@ -1,0 +1,37 @@
+/*
+Const - Não pode ter seu valor reatribuido
+
+const a = 1;
+a = 3;
+
+ERRO: Isso não pode acontecer ...
+*/
+
+
+/*
+Mutação pode acontecer - Alteração de valores em propriedades internar do vetor
+
+const user = { name: 'Kalilo' };
+
+user.name = 'Diego';
+console.log(user);
+*/
+
+/* Variaveis de Escopo
+
+escopo = tudo que está dentro de => {}
+
+São as variáveis utilizadas dentro de um escopo
+
+function teste(x) {
+    let y = 2;
+
+    if (x > 5) {
+        y = 4;
+        console.log(x, y);
+    }
+}
+
+teste(10);
+
+*/

@@ -1,0 +1,43 @@
+/*
+***** FUNÇÕES PARA VETORES *****
+
+.map() => percorre todas as posições do array e executa a função passada utilizando o valor recebido - consegue receber também o index do item.
+
+.reduce() => consumir todo o vetor e transformar em uma unica variavel
+
+.filter() => retorna os valores que são verdadeiros para a instrução que foi passada como filtro. Você pode armazenar esses valores em um novo array só com os valores filtrados.
+
+.find() => procura no array o valor passado como parametro. Se o valor for encontrado, ele é retornado, senão, a função retorna NULL.
+
+
+*/
+
+// .map()
+const array = [1, 3, 4, 5, 8, 9];
+
+const newArray = array.map((item, index) => {
+    return item + index;
+});
+
+console.log(newArray);
+
+// .reduce()
+const sum = array.reduce((total, next) => {
+    return total + next;
+});
+
+console.log(sum);
+
+// .filter()
+const filter = array.filter((item) => {
+    return item % 2 === 0;
+})
+
+console.log(filter);
+
+//  .find()
+const find = array.find((item) => {
+    return item === 4;
+})
+
+console.log(find)

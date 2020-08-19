@@ -1,0 +1,17 @@
+import axios from 'axios';
+
+class Api {
+    //pra pegar o erro utilizando async await deve-se chamar a função dentro de um try catch
+    static async getUserInfo(username) {
+        try {
+            const response = await axios.get(`https://api.github.com/users/${username}`);
+
+            console.log(response.data.name);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+Api.getUserInfo('KaliloTeixeira');
